@@ -16,7 +16,7 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install --no-cache-dir -r /app/requirements.txt
-
+RUN pytest --maxfail=1 --disable-warnings -q ./app/test_app.py
 # Экспонируем порт для Flask-приложения
 EXPOSE 5000
 
