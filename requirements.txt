@@ -2,7 +2,7 @@ flask
 flask-login
 flask-sqlalchemy
 python-dotenv
-psycopg2
+psycopg2 
 psycopg2-binary
 pytest
 pytest-flask
