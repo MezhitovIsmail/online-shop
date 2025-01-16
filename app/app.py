@@ -48,17 +48,6 @@ def buy_game(game_id):
     flash(f'Вы успешно приобрели игру "{game.name}".', 'success')
     return redirect(url_for('index'))
 
-# Пример уязвимости: использование eval без должной фильтрации ввода
-def unsafe_eval(user_input):
-    # Опасный вызов eval, который может привести к выполнению произвольного кода
-    result = eval(user_input)  
-    return result
-
-# Пример уязвимости: хранение пароля в открытом виде
-def get_password():
-    password = "supersecretpassword"  # Это небезопасно!
-    return password
-
 
 @app.route('/purchased_games')
 @login_required
