@@ -4,3 +4,5 @@ flask-sqlalchemy
 python-dotenv
 psycopg2
 psycopg2-binary
+flake8
+bandit
